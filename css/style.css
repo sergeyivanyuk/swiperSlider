@@ -53,6 +53,7 @@ body {
 }
 .slider-container {
   width: 100%;
+  max-width: 1920px;
   height: 816px;
   position: relative;
   margin: 0 auto;
