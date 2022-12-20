@@ -1,3 +1,7 @@
+:root {
+  --swiper-theme-color: #222329;
+}
+
 html,
 body {
   position: relative;
@@ -68,4 +72,47 @@ body {
 .swiper{
   top: 50%;
   transform: translateY(-50%);
+}
+
+@media (max-width: 1025px) {
+  .slider-container {
+    padding: 100px 0;
+    height: 648px;
+  }
+  .slider-background {
+    max-width: 896px;
+    max-height: 498px;
+  }
+  .slider-image{
+    width: 544px;
+    height: 388px;
+  }
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 65px;
+  }
+  .swiper-slide {
+    width: 580px !important;
+  }
+
+}
+@media (max-width: 429px)  {
+  .slider-container {
+    padding: 0;
+    margin: 0;
+  }
+  .slider-background {
+    width: 428px;
+    height: 318px;
+  }
+  .slider-image{
+    width: 329px;
+    height: 234px;
+  }
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 155px;
+  }
+  .swiper-slide {
+    width: 350px !important;
+    height: 100%;
+  }
 }
